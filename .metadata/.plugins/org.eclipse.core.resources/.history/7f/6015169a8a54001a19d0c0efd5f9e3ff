@@ -1,0 +1,61 @@
+package com.lti.finance.core.service;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+import com.lti.finance.core.daos.ProductDao;
+import com.lti.finance.core.daos.PurchaseCardDao;
+import com.lti.finance.core.daos.RegistrationDao;
+import com.lti.finance.core.entities.Product;
+import com.lti.finance.core.entities.PurchaseCard;
+import com.lti.finance.core.entities.User;
+import com.lti.finance.core.exception.FinanceException;
+
+@Service
+public class FinanceServiceImpl implements FinanceService {
+
+	@Autowired
+	private RegistrationDao rdao;
+	@Autowired
+	private ProductDao pdao;
+	
+	@Autowired
+	private PurchaseCardDao cdao;
+	
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	@Override
+	public boolean setUserDetails(User user) throws FinanceException {
+		
+		return rdao.setUserDetails(user);
+	}
+	
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	@Override
+	public ArrayList<User> getUserList() throws FinanceException {
+		return rdao.getUserList();
+	}
+	
+	@Override
+	public Product getProductDetails(int productId) {
+		
+		return pdao.getProductDetails(productId);
+	}
+
+	@Override
+	public PurchaseCard getPurchaseCardDetails(int pcardNo) {
+		
+		return cdao.getPurchaseCardDetails(pcardNo);
+	}
+
+	@Override
+	public boolean setPurchaseCardDetails(PurchaseCard pcard) {
+		
+		return cdao.setPurchaseCardDetails(pcard);
+	}
+	
+
+}

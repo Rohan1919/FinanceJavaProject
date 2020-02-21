@@ -1,21 +1,26 @@
 package com.lti.finance.core.entities;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-//@SequenceGenerator(name="USERSEQ")
+
 @Entity
 @Table(name="REGISTRATION")
 public class User {
-	//@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="USERSEQ")
+	
+	//@OneToMany(cascade = CascadeType.ALL,mappedBy = "userId")
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="USERSEQ")
+	@SequenceGenerator(name="USERSEQ", sequenceName="USERSEQ", allocationSize=1)
 	@Column(name="USERID")
 	private int userId;
 	@Column(name="USERNAME")

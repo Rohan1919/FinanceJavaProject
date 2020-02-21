@@ -6,6 +6,8 @@ import java.util.Enumeration;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -15,11 +17,14 @@ import javax.persistence.Table;
 public class PurchaseCard {
 	@Id
 	@Column(name="PCARDNO")
-	private String pCardNo;
+	private int pCardNo;
 	@Column(name="CARDTYPE")
 	private String cardType;
 	@Column(name="CVV")
 	private int cvv;
+	
+	//@ManyToOne
+	//@JoinColumn(name="userId")
 	@Column(name="USERID")
 	private int userId;
 	@Column(name="ISSUEDATE")
@@ -38,7 +43,11 @@ public class PurchaseCard {
 	
 
 
-	public PurchaseCard(String pCardNo, String cardType, int cvv, int userId, LocalDate issueDate, double limit,
+
+
+
+
+	public PurchaseCard(int pCardNo, String cardType, int cvv, int userId, LocalDate issueDate, double limit,
 			String status, LocalDate expiryDate) {
 		super();
 		this.pCardNo = pCardNo;
@@ -50,6 +59,10 @@ public class PurchaseCard {
 		this.status = status;
 		this.expiryDate = expiryDate;
 	}
+
+
+
+
 
 
 
@@ -96,14 +109,14 @@ public class PurchaseCard {
 
 	
 
-	public String getpCardNo() {
+	public int getpCardNo() {
 		return pCardNo;
 	}
 
 
 
 
-	public void setpCardNo(String pCardNo) {
+	public void setpCardNo(int pCardNo) {
 		this.pCardNo = pCardNo;
 	}
 

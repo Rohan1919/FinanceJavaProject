@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -15,9 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lti.finance.core.entities.Product;
 import com.lti.finance.core.entities.User;
 import com.lti.finance.core.exception.FinanceException;
-import com.lti.finance.service.FinanceService;
+import com.lti.finance.core.service.FinanceService;
 
-
+@CrossOrigin
 @RestController
 public class UserController {
 	

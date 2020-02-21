@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lti.finance.core.entities.Product;
-import com.lti.finance.service.FinanceService;
+import com.lti.finance.core.service.FinanceService;
 
 @RestController
 public class ProductController {
