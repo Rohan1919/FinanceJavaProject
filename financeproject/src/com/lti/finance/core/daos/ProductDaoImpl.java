@@ -6,6 +6,7 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import com.lti.finance.core.entities.Product;
+import com.lti.finance.core.entities.PurchaseCard;
 
 @Repository
 public class ProductDaoImpl implements ProductDao{
@@ -18,5 +19,11 @@ public class ProductDaoImpl implements ProductDao{
 		
 		Product product=manager.find(Product.class,productId);
 		return product;
+	}
+
+	@Override
+	public boolean setProductDetails(Product product) {
+		manager.merge(product);
+		return true;
 	}
 }

@@ -3,13 +3,17 @@ package com.lti.finance.core.entities;
 import java.time.LocalDate;
 import java.util.Enumeration;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //@SequenceGenerator(name="PAYMENTSEQ")
 @Entity
@@ -22,9 +26,6 @@ public class PurchaseCard {
 	private String cardType;
 	@Column(name="CVV")
 	private int cvv;
-	
-	//@ManyToOne
-	//@JoinColumn(name="userId")
 	@Column(name="USERID")
 	private int userId;
 	@Column(name="ISSUEDATE")
@@ -35,7 +36,12 @@ public class PurchaseCard {
 	private String status;
 	@Column(name="EXPDATE")                //DIFFERNT COLUMN NAME THAN VARIABLE
 	private LocalDate expiryDate;
-
+	
+	@JsonIgnore
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="userId")
+	private User user;
+	
 	public PurchaseCard() {
 		
 	}

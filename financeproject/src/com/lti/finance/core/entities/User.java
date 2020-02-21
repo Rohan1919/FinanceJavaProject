@@ -7,10 +7,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -38,6 +41,9 @@ public class User {
 	@Column(name="ADDRESS")
 	private String address;
 	
+	@JsonIgnore
+	@OneToOne(mappedBy = "user")
+	private PurchaseCard pCard;
 	public User() {
 	
 	}

@@ -13,7 +13,10 @@ public interface FinanceService {
 	public boolean setUserDetails(User user) throws FinanceException;
 	public ArrayList<User> getUserList() throws FinanceException;
 	public Product getProductDetails(int productId);
+	public boolean setProductDetails(Product product);
+	
 	public PurchaseCard getPurchaseCardDetails(int cardNo);
     public boolean setPurchaseCardDetails(PurchaseCard pcard);
+
 
 }

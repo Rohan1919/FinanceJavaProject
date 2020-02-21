@@ -1,0 +1,10 @@
+package com.lti.finance.core.daos;
+
+import com.lti.finance.core.entities.Product;
+import com.lti.finance.core.entities.PurchaseCard;
+
+public interface ProductDao {
+	public Product getProductDetails(int productId);
+
+	public boolean setProductDetails(PurchaseCard product);
+}

@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,13 +20,14 @@ public class PurchaseCardController {
 	@Autowired
 	private FinanceService service;
 	
-	@PostMapping(value="/getCardDetails",produces="application/json")
-	public @ResponseBody PurchaseCard getCardDetails(@RequestParam int cardNo) {
+	@PutMapping(value="/getCardDetails",consumes="application/json",produces="application/json")
+	public @ResponseBody PurchaseCard getCardDetails(@RequestBody int cardNo) {
 		 return service.getPurchaseCardDetails(cardNo);
 
 	}
-	
-	@GetMapping(value="/setCardDetails",consumes="application/json")
+
+
+	@PostMapping(value="/setCardDetails",consumes="application/json")
 	public boolean setCardDetails(@RequestBody PurchaseCard pcard){
 		 return service.setPurchaseCardDetails(pcard);
 

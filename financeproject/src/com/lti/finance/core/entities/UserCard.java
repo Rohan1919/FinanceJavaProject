@@ -3,6 +3,9 @@ package com.lti.finance.core.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -18,6 +21,7 @@ public class UserCard {
 	private String bankName;
 	@Column(name="BALANCE")
 	private double balance;
+	
 	
 	public UserCard() {
 		// TODO Auto-generated constructor stub

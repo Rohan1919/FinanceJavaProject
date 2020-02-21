@@ -46,6 +46,12 @@ public class FinanceServiceImpl implements FinanceService {
 		return pdao.getProductDetails(productId);
 	}
 
+	@Override
+	public boolean setProductDetails(Product product) {
+		
+		return pdao.setProductDetails(product);
+	}
+	
 	//Card Related Methods
 	@Override
 	public PurchaseCard getPurchaseCardDetails(int pcardNo) {
@@ -58,6 +64,7 @@ public class FinanceServiceImpl implements FinanceService {
 		
 		return cdao.setPurchaseCardDetails(pcard);
 	}
+
 	
 	//
 	

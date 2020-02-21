@@ -1,0 +1,22 @@
+package com.lti.finance.core.daos;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.stereotype.Repository;
+
+import com.lti.finance.core.entities.Product;
+
+@Repository
+public class ProductDaoImpl implements ProductDao{
+	
+	@PersistenceContext
+	private EntityManager manager;
+	
+	@Override
+	public Product getProductDetails(int productId) {
+		
+		Product product=manager.find(Product.class,productId);
+		return product;
+	}
+}
