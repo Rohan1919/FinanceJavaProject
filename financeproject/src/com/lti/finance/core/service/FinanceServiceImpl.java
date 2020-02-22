@@ -40,27 +40,31 @@ public class FinanceServiceImpl implements FinanceService {
 	}
 	
 	//Product Related Methods
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override
-	public Product getProductDetails(int productId) {
+	public Product getProductDetails(int productId) throws FinanceException{
 		
 		return pdao.getProductDetails(productId);
 	}
 
 	@Override
-	public boolean setProductDetails(Product product) {
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	public boolean setProductDetails(Product product)throws FinanceException {
 		
 		return pdao.setProductDetails(product);
 	}
 	
 	//Card Related Methods
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override
-	public PurchaseCard getPurchaseCardDetails(int pcardNo) {
+	public PurchaseCard getPurchaseCardDetails(int pcardNo)throws FinanceException {
 		
 		return cdao.getPurchaseCardDetails(pcardNo);
 	}
 
 	@Override
-	public boolean setPurchaseCardDetails(PurchaseCard pcard) {
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	public boolean setPurchaseCardDetails(PurchaseCard pcard) throws FinanceException{
 		
 		return cdao.setPurchaseCardDetails(pcard);
 	}

@@ -14,10 +14,13 @@ public class Product {
 	@Id
 	@Column(name="PRODUCTID")
 	private int productId;
+	
 	@Column(name="PRODUCTNAME")
 	private String productName;
+	
 	@Column(name="PRICE")
 	private double price;
+	
 	@Column(name="PRODUCTDETAILS")
 	private String productDetails;
 	
@@ -26,7 +29,7 @@ public class Product {
 	}
 
 	public Product(int productId, String productName, double price, String productDetails) {
-		super();
+	
 		this.productId = productId;
 		this.productName = productName;
 		this.price = price;

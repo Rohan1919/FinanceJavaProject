@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lti.finance.core.entities.Product;
 import com.lti.finance.core.entities.PurchaseCard;
+import com.lti.finance.core.exception.FinanceException;
 import com.lti.finance.core.service.FinanceService;
 
 @RestController
@@ -22,14 +23,26 @@ public class PurchaseCardController {
 	
 	@PutMapping(value="/getCardDetails",consumes="application/json",produces="application/json")
 	public @ResponseBody PurchaseCard getCardDetails(@RequestBody int cardNo) {
-		 return service.getPurchaseCardDetails(cardNo);
+		PurchaseCard pCard=null; 
+		try {
+			pCard= service.getPurchaseCardDetails(cardNo);
+		} catch (FinanceException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return pCard;
 
 	}
 
 
 	@PostMapping(value="/setCardDetails",consumes="application/json")
 	public boolean setCardDetails(@RequestBody PurchaseCard pcard){
-		 return service.setPurchaseCardDetails(pcard);
-
+		 try {
+			return service.setPurchaseCardDetails(pcard);
+		} catch (FinanceException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 return false;
 	}
 }

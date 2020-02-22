@@ -27,7 +27,7 @@ public class RegistrationDaoImpl implements RegistrationDao {
 		manager.persist(user);
 		return true;
 	}
-
+	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public ArrayList<User> getUserList() throws FinanceException {
 		Query qry=manager.createQuery("from User");

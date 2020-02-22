@@ -12,11 +12,11 @@ public interface FinanceService {
 	
 	public boolean setUserDetails(User user) throws FinanceException;
 	public ArrayList<User> getUserList() throws FinanceException;
-	public Product getProductDetails(int productId);
-	public boolean setProductDetails(Product product);
+	public Product getProductDetails(int productId)throws FinanceException;
+	public boolean setProductDetails(Product product)throws FinanceException;
 	
-	public PurchaseCard getPurchaseCardDetails(int cardNo);
-    public boolean setPurchaseCardDetails(PurchaseCard pcard);
+	public PurchaseCard getPurchaseCardDetails(int cardNo)throws FinanceException;
+    public boolean setPurchaseCardDetails(PurchaseCard pcard)throws FinanceException;
 
 
 }

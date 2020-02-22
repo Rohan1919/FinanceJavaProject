@@ -25,7 +25,7 @@ public class UserController {
 	@Autowired
 	private FinanceService fService;
 	
-	@PostMapping(value="/registration", consumes="application/json")
+	@PostMapping(value="/registration", produces="application/json",consumes="application/json")
 	public void setUserDetails(@RequestBody User user){
 		
 		System.out.println(user);
