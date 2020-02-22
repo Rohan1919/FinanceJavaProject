@@ -69,8 +69,15 @@ public class FinanceServiceImpl implements FinanceService {
 		return cdao.setPurchaseCardDetails(pcard);
 	}
 
+	@Override
+	public List<Product> getProductDetailsByType(String productType) throws FinanceException {
+		
+		return pdao.getProductDetailsByType(productType);
+	}
+   
+
 	
-	//
+	
 	
 
 }

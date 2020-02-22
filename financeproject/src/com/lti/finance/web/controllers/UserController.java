@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lti.finance.core.entities.Product;
+import com.lti.finance.core.entities.PurchaseCard;
 import com.lti.finance.core.entities.User;
 import com.lti.finance.core.exception.FinanceException;
 import com.lti.finance.core.service.FinanceService;
@@ -25,10 +26,12 @@ public class UserController {
 	@Autowired
 	private FinanceService fService;
 	
-	@PostMapping(value="/registration", produces="application/json",consumes="application/json")
+	@PostMapping(value="/registration",consumes="application/json")
 	public void setUserDetails(@RequestBody User user){
+		//String pr = user.getpCard().getCardType();
+		PurchaseCard pc=new PurchaseCard();
 		
-		System.out.println(user);
+		System.out.println(user.getpCard().getCardType());
 		try {
 			boolean p= fService.setUserDetails(user);
 		} catch (FinanceException e) {

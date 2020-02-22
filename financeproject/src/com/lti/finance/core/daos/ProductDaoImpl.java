@@ -1,14 +1,17 @@
 package com.lti.finance.core.daos;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.lti.finance.core.entities.Product;
-import com.lti.finance.core.entities.PurchaseCard;
+
 import com.lti.finance.core.exception.FinanceException;
 
 @Repository
@@ -28,5 +31,12 @@ public class ProductDaoImpl implements ProductDao{
 	public boolean setProductDetails(Product product) throws FinanceException{
 		manager.merge(product);
 		return true;
+	}
+	@Override
+	public List<Product> getProductDetailsByType(String productType) throws FinanceException {
+		// TODO Auto-generated method stub
+		Query qry=manager.createQuery("select p from Product p where p.productType=:productType");
+		qry.setParameter("productType", productType);
+		return qry.getResultList();
 	}
 }
