@@ -24,17 +24,26 @@ public class Product {
 	@Column(name="PRODUCTDETAILS")
 	private String productDetails;
 	
-	public Product() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public Product(int productId, String productName, double price, String productDetails) {
+	@Column(name="PRODUCTURL")
+	private String productUrl;
 	
+	@Column(name="PRODUCTTYPE")
+	private String productType;
+	
+	public Product() {
+		
+	}
+	public Product(int productId, String productName, double price, String productDetails, String productUrl,
+			String productType) {
+		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.price = price;
 		this.productDetails = productDetails;
+		this.productUrl = productUrl;
+		this.productType = productType;
 	}
+
 
 	public int getProductId() {
 		return productId;
@@ -68,11 +77,28 @@ public class Product {
 		this.productDetails = productDetails;
 	}
 
+	public String getProductUrl() {
+		return productUrl;
+	}
+
+	public void setProductUrl(String productUrl) {
+		this.productUrl = productUrl;
+	}
+
+	public String getProductType() {
+		return productType;
+	}
+
+	public void setProductType(String productType) {
+		this.productType = productType;
+	}
 	@Override
 	public String toString() {
 		return "Product [productId=" + productId + ", productName=" + productName + ", price=" + price
-				+ ", productDetails=" + productDetails + "]";
+				+ ", productDetails=" + productDetails + ", productUrl=" + productUrl + ", productType=" + productType
+				+ "]";
 	}
+
 	
 	
 	

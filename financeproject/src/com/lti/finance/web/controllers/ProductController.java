@@ -1,6 +1,9 @@
 package com.lti.finance.web.controllers;
 
-import javax.websocket.server.PathParam;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,24 +24,40 @@ import com.lti.finance.core.entities.PurchaseCard;
 import com.lti.finance.core.exception.FinanceException;
 import com.lti.finance.core.service.FinanceService;
 
-//@CrossOrigin
+@CrossOrigin
 @RestController
 public class ProductController {
 	@Autowired
 	private FinanceService service;
+	//getting product data from id
+//	@GetMapping(value="/getProductDetails/{productId}",produces="application/json")
+//	public @ResponseBody Product getProductDetails(@PathVariable("productId") int productId) {
+//		System.out.println(productId);
+//		Product prod=null;
+//		 try {
+//			prod=service.getProductDetails(productId);
+//		} catch (FinanceException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		 return prod;
+//	}
 	
 	@PutMapping(value="/getProductDetails",produces="application/json",consumes="application/json")
-	public @ResponseBody Product getProductDetails(@RequestBody int proId) {
-		System.out.println(proId);
+	public @ResponseBody Product getProductDetails(@RequestBody Product product) {
+		System.out.println(product.getProductId());
 		Product prod=null;
 		 try {
-			prod=service.getProductDetails(proId);
+			prod=service.getProductDetails(product.getProductId());
 		} catch (FinanceException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		 return prod;
 	}
+	
+	
+	//entering product data into database
 	@PostMapping(value="/setProductDetails",consumes="application/json")
 	public boolean setProductDetails(@RequestBody Product product){
 		 try {
@@ -50,5 +69,33 @@ public class ProductController {
 		 return false;
 
 	}
+	
+//	//fetching product by type
+//	@GetMapping(value="/getProductDetails/{productType}",produces="application/json")
+//	public @ResponseBody List<Product> getProductDetailsByType(@PathVariable("productType") String productType) {
+//		System.out.println(productType);
+//		List<Product> prod=new ArrayList<>();
+//		 try {
+//			prod=service.getProductDetailsByType(productType);
+//		} catch (FinanceException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		 return prod;
+//	}
+	
+	//fetching product by type
+		@PutMapping(value="/getProductDetailsByType",produces="application/json",consumes="application/json")
+		public @ResponseBody List<Product> getProductDetailsByType(@RequestBody Product product) {
+			System.out.println(product.getProductType());
+			List<Product> prod=new ArrayList<>();
+			 try {
+				prod=service.getProductDetailsByType(product.getProductType());
+			} catch (FinanceException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 return prod;
+		}
 
 }

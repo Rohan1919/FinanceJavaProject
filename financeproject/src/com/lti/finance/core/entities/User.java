@@ -26,6 +26,9 @@ public class User {
 	@SequenceGenerator(name="USERSEQ", sequenceName="USERSEQ", allocationSize=1)
 	@Column(name="USERID")
 	private int userId;
+	
+	@Column(name="NAME")
+	private String name;
 	@Column(name="USERNAME")
 	private String userName;
 	@Column(name="PASSWORD")
@@ -41,17 +44,17 @@ public class User {
 	@Column(name="ADDRESS")
 	private String address;
 	
-	@JsonIgnore
-	@OneToOne(mappedBy = "user")
+	@JsonIgnore//cascade = CascadeType.ALL
+	@OneToOne(cascade = CascadeType.ALL,mappedBy ="user")
 	private PurchaseCard pCard;
 	public User() {
 	
 	}
-
-	public User(int userId, String userName, String password, String phoneNumber, String email, String aadharCardNumber,
-			String panCardNumber, String address) {
+	public User(int userId, String name, String userName, String password, String phoneNumber, String email,
+			String aadharCardNumber, String panCardNumber, String address, PurchaseCard pCard) {
 		super();
 		this.userId = userId;
+		this.name = name;
 		this.userName = userName;
 		this.password = password;
 		this.phoneNumber = phoneNumber;
@@ -59,78 +62,75 @@ public class User {
 		this.aadharCardNumber = aadharCardNumber;
 		this.panCardNumber = panCardNumber;
 		this.address = address;
+		this.pCard = pCard;
 	}
-
 	public int getUserId() {
 		return userId;
 	}
-
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getUserName() {
 		return userName;
 	}
-
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 	public String getAadharCardNumber() {
 		return aadharCardNumber;
 	}
-
 	public void setAadharCardNumber(String aadharCardNumber) {
 		this.aadharCardNumber = aadharCardNumber;
 	}
-
 	public String getPanCardNumber() {
 		return panCardNumber;
 	}
-
 	public void setPanCardNumber(String panCardNumber) {
 		this.panCardNumber = panCardNumber;
 	}
-
 	public String getAddress() {
 		return address;
 	}
-
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
+	public PurchaseCard getpCard() {
+		return pCard;
+	}
+	public void setpCard(PurchaseCard pCard) {
+		this.pCard = pCard;
+	}
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", password=" + password + ", phoneNumber="
-				+ phoneNumber + ", email=" + email + ", aadharCardNumber=" + aadharCardNumber + ", panCardNumber="
-				+ panCardNumber + ", address=" + address + "]";
+		return "User [userId=" + userId + ", name=" + name + ", userName=" + userName + ", password=" + password
+				+ ", phoneNumber=" + phoneNumber + ", email=" + email + ", aadharCardNumber=" + aadharCardNumber
+				+ ", panCardNumber=" + panCardNumber + ", address=" + address + ", pCard=" + pCard + "]";
 	}
+	
 	
 
 }
