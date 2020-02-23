@@ -12,6 +12,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
@@ -21,9 +22,11 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
+import org.hibernate.sql.Insert;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
@@ -77,6 +80,12 @@ public class User {
 	@Column(name="EXPDATE",table = "PURCHASE_CARD")                //DIFFERNT COLUMN NAME THAN VARIABLE
 	//private LocalDate expiryDate=LocalDate.now().plusYears(3);
 	private Date expiryDate=Date.valueOf(LocalDate.now().plusYears(3));
+	
+	@JsonIgnore
+	@OneToOne
+	@JoinColumn(name="AADHARCARD",insertable = false,updatable=false)
+	private GovApi gapi;
+	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}

@@ -1,5 +1,6 @@
 package com.lti.finance.core.entities;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
@@ -9,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -19,12 +21,14 @@ public class Purchase {
 	
 	//@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TRANSACTIONSEQ")
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PURCHASEIDSEQ")
+	@SequenceGenerator(name="PURCHASEIDSEQ", sequenceName="PURCHASEIDSEQ", allocationSize=5)
 	@Column(name="PURCHASEID")
 	private int purchaseId;
 	@Column(name="TENTUREPERIOD")
 	private int tenturePeriod;
 	@Column(name="TRANSACTIONDATE")
-	private LocalDate transactionDate;
+	private Date transactionDate;
 	@Column(name="MONTHLYEMI")
 	private double monthlyEmi;
 	@Column(name="TOTALAMOUNT")
@@ -43,7 +47,7 @@ public class Purchase {
 
 	
 
-	public Purchase(int purchaseId, int productId, int pCardNo, int tenturePeriod, LocalDate transactionDate,
+	public Purchase(int purchaseId, int productId, int pCardNo, int tenturePeriod, Date transactionDate,
 			double monthlyEmi, double totalAmount) {
 		super();
 		this.purchaseId = purchaseId;
@@ -93,11 +97,11 @@ public class Purchase {
 		this.tenturePeriod = tenturePeriod;
 	}
 
-	public LocalDate getTransactionDate() {
+	public Date getTransactionDate() {
 		return transactionDate;
 	}
 
-	public void setTransactionDate(LocalDate transactionDate) {
+	public void setTransactionDate(Date transactionDate) {
 		this.transactionDate = transactionDate;
 	}
 

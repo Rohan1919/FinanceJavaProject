@@ -16,6 +16,7 @@ import com.lti.finance.core.daos.PurchaseProductDao;
 //import com.lti.finance.core.daos.PurchaseCardDao;
 import com.lti.finance.core.daos.RegistrationDao;
 import com.lti.finance.core.entities.EmiSchedule;
+import com.lti.finance.core.entities.GovApi;
 import com.lti.finance.core.entities.Product;
 import com.lti.finance.core.entities.Purchase;
 //import com.lti.finance.core.entities.PurchaseCard;
@@ -44,9 +45,20 @@ public class FinanceServiceImpl implements FinanceService {
 	@Override
 	public boolean setUserDetails(User user) throws FinanceException {
 		
-		return rdao.setUserDetails(user);
+		if(rdao.isUniqueUser(user.getAadharCardNumber())) {
+			GovApi gapi=rdao.isValid(user.getAadharCardNumber());
+			if(gapi.getName().equalsIgnoreCase(user.getName()) && (gapi.getAadharCardNo().equalsIgnoreCase(user.getAadharCardNumber()))&& (gapi.getPanCardNo().equalsIgnoreCase(user.getPanCardNumber()))){
+				
+				return rdao.setUserDetails(user);
+		
+			}else {
+				return false;
+			}
+		}
+		else {
+			return false;
+		}
 	}
-	
 	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override
 	public ArrayList<User> getUserList() throws FinanceException {
@@ -83,6 +95,7 @@ public class FinanceServiceImpl implements FinanceService {
 //		return cdao.setPurchaseCardDetails(pcard);
 //	}
 //
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override
 	public List<Product> getProductDetailsByType(String productType) throws FinanceException {
 		

@@ -19,6 +19,7 @@ public class ProductDaoImpl implements ProductDao{
 	
 	@PersistenceContext
 	private EntityManager manager;
+	
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public Product getProductDetails(int productId)throws FinanceException {
@@ -32,6 +33,8 @@ public class ProductDaoImpl implements ProductDao{
 		manager.merge(product);
 		return true;
 	}
+	
+	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public List<Product> getProductDetailsByType(String productType) throws FinanceException {
 		// TODO Auto-generated method stub

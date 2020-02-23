@@ -2293,3 +2293,238 @@ org.apache.maven.settings.building.SettingsBuildingException: 1 problem was enco
 2020-02-23 13:54:22,545 [Worker-206: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
 2020-02-23 13:54:22,546 [Worker-206: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-02-23 13:54:22,556 [Worker-206: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 16:15:11,190 [Worker-215: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:15:11,203 [Worker-215: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 16:15:11,205 [Worker-215: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:15:11,216 [Worker-215: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 16:16:26,751 [Worker-215: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:16:26,762 [Worker-215: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 16:16:26,795 [Worker-215: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:16:26,806 [Worker-215: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 16:18:32,397 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:18:32,414 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 16:18:32,415 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:18:32,428 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 16:27:42,554 [Worker-222: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:27:42,568 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 16:27:42,569 [Worker-222: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:27:42,577 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 16:28:14,616 [Worker-223: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:28:14,626 [Worker-223: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 16:28:14,627 [Worker-223: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:28:14,639 [Worker-223: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 16:59:53,680 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:59:53,706 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 16:59:53,707 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 16:59:53,718 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:00:00,845 [Worker-227: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:00:00,854 [Worker-227: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:00:00,855 [Worker-227: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:00:00,863 [Worker-227: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:19:36,447 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:19:36,459 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:19:36,460 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:19:36,470 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:19:53,803 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:19:53,814 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:19:53,815 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:19:53,826 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:23:28,407 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:23:28,502 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:23:28,504 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:23:28,534 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:24:51,398 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:24:51,425 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:24:51,426 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:24:51,449 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:24:59,038 [Worker-228: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:24:59,049 [Worker-228: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:24:59,050 [Worker-228: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:24:59,060 [Worker-228: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:25:12,455 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:25:12,473 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:25:12,475 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:25:12,492 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:26:00,486 [Worker-233: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:26:00,498 [Worker-233: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:26:00,500 [Worker-233: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:26:00,517 [Worker-233: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:26:33,263 [Worker-233: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:26:33,277 [Worker-233: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:26:33,277 [Worker-233: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:26:33,297 [Worker-233: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:27:13,242 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:27:13,263 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:27:13,264 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:27:13,279 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:27:19,146 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:27:19,163 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:27:19,164 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:27:19,179 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:27:32,561 [Worker-232: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:27:32,574 [Worker-232: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:27:32,575 [Worker-232: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:27:32,585 [Worker-232: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:33:55,613 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:33:55,626 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:33:55,628 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:33:55,641 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:34:11,607 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:34:11,627 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:34:11,630 [Worker-231: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:34:11,651 [Worker-231: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:34:34,471 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:34:34,480 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:34:34,481 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:34:34,493 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:34:54,738 [Worker-238: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:34:54,748 [Worker-238: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:34:54,749 [Worker-238: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:34:54,760 [Worker-238: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:35:44,343 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:35:44,352 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:35:44,354 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:35:44,365 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:35:59,123 [Worker-240: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:35:59,132 [Worker-240: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:35:59,132 [Worker-240: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:35:59,141 [Worker-240: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 17:36:11,914 [Worker-232: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:36:11,937 [Worker-232: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 17:36:11,939 [Worker-232: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 17:36:11,967 [Worker-232: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:00:09,649 [Worker-241: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:00:09,697 [Worker-241: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:00:09,699 [Worker-241: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:00:09,716 [Worker-241: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:03:49,649 [Worker-244: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:03:49,663 [Worker-244: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:03:49,664 [Worker-244: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:03:49,675 [Worker-244: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:06:49,665 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:06:49,678 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:06:49,679 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:06:49,692 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:08:12,869 [Worker-247: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:08:12,882 [Worker-247: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:08:12,884 [Worker-247: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:08:12,897 [Worker-247: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:21:00,348 [Worker-254: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:00,402 [Worker-254: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:21:00,403 [Worker-254: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:00,415 [Worker-254: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:21:22,649 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:22,664 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:21:22,665 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:22,680 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:21:43,268 [Worker-254: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:43,283 [Worker-254: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:21:43,283 [Worker-254: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:43,293 [Worker-254: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:21:57,547 [Worker-254: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:57,556 [Worker-254: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:21:57,557 [Worker-254: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:21:57,565 [Worker-254: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:22:20,464 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:22:20,476 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:22:20,478 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:22:20,490 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:22:43,046 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:22:43,055 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:22:43,057 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:22:43,067 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:23:16,042 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:23:16,058 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:23:16,060 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:23:16,070 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:24:39,528 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:24:39,544 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:24:39,546 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:24:39,556 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:24:48,328 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:24:48,351 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:24:48,353 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:24:48,381 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:35:07,348 [Worker-265: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:35:07,453 [Worker-265: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:35:07,453 [Worker-265: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:35:07,462 [Worker-265: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:36:54,588 [Worker-266: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:36:54,619 [Worker-266: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:36:54,620 [Worker-266: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:36:54,646 [Worker-266: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:38:53,697 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:38:54,542 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:38:54,546 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:38:54,589 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:39:01,271 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:39:01,313 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:39:01,316 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:39:01,420 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:39:29,647 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:39:29,689 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:39:29,691 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:39:29,741 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:39:41,701 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:39:41,712 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:39:41,713 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:39:41,724 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:43:09,737 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:43:09,751 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:43:09,752 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:43:09,763 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:43:28,556 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:43:28,571 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:43:28,572 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:43:28,587 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:44:56,163 [Worker-275: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:44:56,176 [Worker-275: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:44:56,178 [Worker-275: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:44:56,192 [Worker-275: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:48:28,549 [Worker-278: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:48:28,560 [Worker-278: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:48:28,562 [Worker-278: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:48:28,574 [Worker-278: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:51:28,375 [Worker-274: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:51:28,384 [Worker-274: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:51:28,384 [Worker-274: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:51:28,394 [Worker-274: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:54:21,184 [Worker-274: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:54:21,222 [Worker-274: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:54:21,224 [Worker-274: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:54:21,234 [Worker-274: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:54:38,765 [Worker-274: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:54:38,774 [Worker-274: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:54:38,775 [Worker-274: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:54:38,786 [Worker-274: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:55:05,939 [Worker-276: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:55:05,949 [Worker-276: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:55:05,950 [Worker-276: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:55:05,959 [Worker-276: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:57:16,219 [Worker-286: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:57:16,249 [Worker-286: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:57:16,250 [Worker-286: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:57:16,262 [Worker-286: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 18:59:47,670 [Worker-280: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:59:47,740 [Worker-280: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 18:59:47,740 [Worker-280: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 18:59:47,750 [Worker-280: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 19:02:24,877 [Worker-280: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 19:02:26,051 [Worker-280: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 19:02:26,075 [Worker-280: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 19:02:26,131 [Worker-280: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources
+2020-02-23 19:15:31,010 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-02-23 19:15:54,643 [Worker-15: Repository registry initialization] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read settings.xml, assuming default values
+org.apache.maven.settings.building.SettingsBuildingException: 1 problem was encountered while building the effective settings
+[FATAL] Non-parseable settings C:\Users\ROHAN\.m2\settings.xml: expected start tag name and not < (position: START_DOCUMENT seen <<... @1:2)  @ C:\Users\ROHAN\.m2\settings.xml, line 1, column 2
+
+	at org.apache.maven.settings.building.DefaultSettingsBuilder.build(DefaultSettingsBuilder.java:129) ~[maven-settings-builder-3.6.3.jar:3.6.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:467) [org.eclipse.m2e.core_1.14.0.20191209-1925.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:436) [org.eclipse.m2e.core_1.14.0.20191209-1925.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:225) [org.eclipse.m2e.core_1.14.0.20191209-1925.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:49) [org.eclipse.m2e.core_1.14.0.20191209-1925.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.600.v20191122-2104.jar:na]
+2020-02-23 19:16:22,804 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 19:16:22,812 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\main\resources
+2020-02-23 19:16:22,815 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-23 19:16:22,824 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\financeproject\src\test\resources

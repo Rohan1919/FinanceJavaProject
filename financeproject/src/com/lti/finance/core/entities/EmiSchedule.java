@@ -18,6 +18,8 @@ import javax.persistence.Table;
 public class EmiSchedule {
 	//@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SCHEDULESEQ")
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TRANSACTIONIDSEQ")
+	@SequenceGenerator(name="TRANSACTIONIDSEQ", sequenceName="TRANSACTIONIDSEQ", allocationSize=1)
 	@Column(name="TRANSACTIONID")
 	private int transactionId;
 	@Column(name="PURCHASEID")
