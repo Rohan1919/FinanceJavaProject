@@ -1,5 +1,6 @@
 package com.lti.finance.core.entities;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.Enumeration;
 
@@ -24,23 +25,22 @@ public class EmiSchedule {
 	@Column(name="INSTALLMENTNO")
 	private int installmentNo;
 	@Column(name="DUEDATE")
-	private LocalDate dueDate;
+	private Date dueDate;
 	@Column(name="AMOUNTRECEIVED")
 	private double amountReceived;
 	@Column(name="AMOUNTRECEIVABLE")
 	private double amountReceivable;
 	@Column(name="STATUS")
 	private String status;
-	@Column(name="PENALTY")
-    private double penalty;
+
    
 	public EmiSchedule() {
 		
 	}
 
 	
-	public EmiSchedule(int transactionId, int purchaseId, int installmentNo, LocalDate dueDate, double amountReceived,
-			double amountReceivable, String status, double penalty) {
+	public EmiSchedule(int transactionId, int purchaseId, int installmentNo,Date dueDate, double amountReceived,
+			double amountReceivable, String status) {
 		super();
 		this.transactionId = transactionId;
 		this.purchaseId = purchaseId;
@@ -49,7 +49,6 @@ public class EmiSchedule {
 		this.amountReceived = amountReceived;
 		this.amountReceivable = amountReceivable;
 		this.status = status;
-		this.penalty = penalty;
 	}
 
 
@@ -77,11 +76,11 @@ public class EmiSchedule {
 		this.installmentNo = installmentNo;
 	}
 
-	public LocalDate getDueDate() {
+	public Date getDueDate() {
 		return dueDate;
 	}
 
-	public void setDueDate(LocalDate dueDate) {
+	public void setDueDate(Date dueDate) {
 		this.dueDate = dueDate;
 	}
 
@@ -112,20 +111,12 @@ public class EmiSchedule {
 	}
 
 
-	public double getPenalty() {
-		return penalty;
-	}
-
-	public void setPenalty(double penalty) {
-		this.penalty = penalty;
-	}
-
 
 	@Override
 	public String toString() {
 		return "EmiSchedule [transactionId=" + transactionId + ", purchaseId=" + purchaseId + ", installmentNo="
 				+ installmentNo + ", dueDate=" + dueDate + ", amountReceived=" + amountReceived + ", amountReceivable="
-				+ amountReceivable + ", status=" + status + ", penalty=" + penalty + "]";
+				+ amountReceivable + ", status=" + status + "]";
 	}
 
 	

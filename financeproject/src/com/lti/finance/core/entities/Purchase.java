@@ -26,7 +26,7 @@ public class Purchase {
 	@Column(name="TRANSACTIONDATE")
 	private LocalDate transactionDate;
 	@Column(name="MONTHLYEMI")
-	private int monthlyEmi;
+	private double monthlyEmi;
 	@Column(name="TOTALAMOUNT")
 	private double totalAmount;
 	
@@ -44,7 +44,7 @@ public class Purchase {
 	
 
 	public Purchase(int purchaseId, int productId, int pCardNo, int tenturePeriod, LocalDate transactionDate,
-			int monthlyEmi, double totalAmount) {
+			double monthlyEmi, double totalAmount) {
 		super();
 		this.purchaseId = purchaseId;
 		this.productId = productId;
@@ -101,11 +101,11 @@ public class Purchase {
 		this.transactionDate = transactionDate;
 	}
 
-	public int getMonthlyEmi() {
+	public double getMonthlyEmi() {
 		return monthlyEmi;
 	}
 
-	public void setMonthlyEmi(int monthlyEmi) {
+	public void setMonthlyEmi(double monthlyEmi) {
 		this.monthlyEmi = monthlyEmi;
 	}
 

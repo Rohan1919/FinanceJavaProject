@@ -3,7 +3,7 @@ package com.lti.finance.core.daos;
 import java.util.List;
 
 import com.lti.finance.core.entities.Product;
-import com.lti.finance.core.entities.PurchaseCard;
+//import com.lti.finance.core.entities.PurchaseCard;
 import com.lti.finance.core.exception.FinanceException;
 
 public interface ProductDao {
