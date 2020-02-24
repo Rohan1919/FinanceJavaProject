@@ -27,14 +27,14 @@ public class PurchaseProductDaoImpl implements PurchaseProductDao {
 		return true;
 		
 	}
-//
-//	@Override
-//	public List<EmiSchedule> getSchedules(int userId) throws FinanceException {
-//	    Query qry=manager.createQuery("select transactionId,)
-//		
-//		return ;
-//	}
-//	
-//	
+
+	@Override
+	public List<EmiSchedule> getSchedules(int userId) throws FinanceException {
+	    Query qry=manager.createQuery("select transactionId,installementNo,dueDate,amountReceived,status from )
+		
+		return ;
+	}
+	
+	
 
 }
