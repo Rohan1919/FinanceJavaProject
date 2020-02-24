@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lti.finance.core.entities.Product;
-
+import com.lti.finance.core.entities.User;
 import com.lti.finance.core.exception.FinanceException;
 import com.lti.finance.core.service.FinanceService;
 
@@ -91,6 +91,19 @@ public class ProductController {
 			List<Product> prod=new ArrayList<>();
 			 try {
 				prod=service.getProductDetailsByType(product.getProductType());
+			} catch (FinanceException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 return prod;
+		}
+		
+		@PostMapping(value="/buyProducts",produces="application/json",consumes="application/json")
+		public @ResponseBody List<Product> getUserProducts(@RequestBody User user) {
+			System.out.println(user.getUserId());
+			List<Product> prod=new ArrayList<>();
+			 try {
+				prod=service.getUserProducts(user.getUserId());
 			} catch (FinanceException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

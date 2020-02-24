@@ -24,7 +24,7 @@ public class RegistrationDaoImpl implements RegistrationDao {
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public boolean setUserDetails(User user) throws FinanceException {
-		manager.persist(user);
+		manager.merge(user);
 		return true;
 	}
 	@Transactional(propagation = Propagation.REQUIRED)
@@ -53,9 +53,19 @@ public class RegistrationDaoImpl implements RegistrationDao {
 			return false;
 		
 	}
-
+	@Transactional(propagation = Propagation.REQUIRED)
+	@Override
+	public User getUser(User user) throws FinanceException {
+		Query qry=manager.createQuery("select u from User u where u.userName=:username AND u.password=:pass");
+		qry.setParameter("username", user.getUserName());
+		qry.setParameter("pass", user.getPassword());
+		User userLocal= (User) qry.getSingleResult();
+		if(userLocal.equals(null)) {
+		    userLocal.setUserId(-1);
+		}
+		
+		return userLocal;
+	}
 	
 	
-	
-
 }

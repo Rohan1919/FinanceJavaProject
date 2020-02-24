@@ -108,21 +108,21 @@ public class FinanceServiceImpl implements FinanceService {
 	@Override
 	public boolean setPurchaseProductDetails(Purchase purchase) throws FinanceException {
 		purchase.setMonthlyEmi((purchase.getTotalAmount()/purchase.getTenturePeriod()));
-		setEmiSchedule(purchase);
+		boolean b=setEmiSchedule(purchase);//method 
 		return ppdao.setPurchaseProductDetails(purchase);
 	}
 	
 	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	public boolean setEmiSchedule(Purchase purchase) throws FinanceException  {
 		
-		EmiSchedule emiSch=new EmiSchedule();
+		EmiSchedule emiSch=null;
 		List <EmiSchedule> emiSchedule=new ArrayList<>();
 		
 		for(int i=1;i<=purchase.getTenturePeriod();i++) {
-		
+			emiSch=new EmiSchedule();
 		     emiSch.setInstallmentNo(i);
-		     emiSch.setTransactionId(purchase.getPurchaseId());
-		     emiSch.setDueDate(Date.valueOf((LocalDate.now().plusDays(30))));
+		     emiSch.setPurchaseId(purchase.getPurchaseId());
+		     emiSch.setDueDate(Date.valueOf((LocalDate.now().plusDays(30*i))));
 		     emiSch.setAmountReceived(purchase.getMonthlyEmi());
 		     emiSch.setAmountReceivable(purchase.getTotalAmount());
 		     emiSch.setStatus("NO"); 
@@ -132,6 +132,23 @@ public class FinanceServiceImpl implements FinanceService {
 		return edao.setEmiSchedule(emiSchedule);
 	
 	}
-	
+	//Login
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	@Override
+	public User getUser(User user) throws FinanceException {
+		
+		return rdao.getUser(user);
+	}
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	@Override
+	public List<Product> getUserProducts(int userId) throws FinanceException {
+		return pdao.getUserProducts(userId); 
+	}
+	@Override
+	public List<EmiSchedule> getSchedules(int userId) throws FinanceException {
+		// TODO Auto-generated method stub
+		return ppdao.getSchedules(userId);
+	}
+
 
 }

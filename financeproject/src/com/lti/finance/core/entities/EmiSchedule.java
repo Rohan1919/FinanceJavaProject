@@ -9,8 +9,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //@SequenceGenerator(name="SCHEDULESEQ")
 @Entity
@@ -34,8 +39,12 @@ public class EmiSchedule {
 	private double amountReceivable;
 	@Column(name="STATUS")
 	private String status;
-
-   
+	
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name="PURCHASEID",insertable = false,updatable=false)
+	private Purchase purchase;
+	
 	public EmiSchedule() {
 		
 	}

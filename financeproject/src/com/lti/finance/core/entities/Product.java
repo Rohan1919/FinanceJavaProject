@@ -1,16 +1,26 @@
 package com.lti.finance.core.entities;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="PRODUCT_INFO")
 public class Product {
 	
+	
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PRODUCTIDSEQ")
+//	@SequenceGenerator(name="PRODUCTIDSEQ", sequenceName="PRODUCTIDSEQ", allocationSize=5)
 	@Id
 	@Column(name="PRODUCTID")
 	private int productId;
@@ -29,6 +39,10 @@ public class Product {
 	
 	@Column(name="PRODUCTTYPE")
 	private String productType;
+	
+	@JsonIgnore
+	@OneToOne(cascade = CascadeType.ALL,mappedBy = "product")
+	private Purchase purchase;
 	
 	public Product() {
 		

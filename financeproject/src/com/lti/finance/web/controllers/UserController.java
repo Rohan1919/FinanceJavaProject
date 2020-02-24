@@ -1,11 +1,13 @@
 package com.lti.finance.web.controllers;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -47,6 +49,17 @@ public class UserController {
 		return userList;
 	}
 	
-	
+	@PostMapping(value="/login",produces="application/json",consumes="application/json")
+	public @ResponseBody User getUser(@RequestBody User user){
+		User user1=null;
+		try {
+			user1=fService.getUser(user);
+		} catch (FinanceException e) {
+			
+			e.printStackTrace();
+		}
+		System.out.println(user1);
+		return user1;
+	}
 
 }

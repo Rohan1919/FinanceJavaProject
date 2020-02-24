@@ -12,6 +12,9 @@ public interface ProductDao {
 	public boolean setProductDetails(Product product)throws FinanceException;
 
 	public List<Product> getProductDetailsByType(String productType) throws FinanceException;
+
+	public List<Product> getUserProducts(int userId) throws FinanceException;
+
 	
 	
 }

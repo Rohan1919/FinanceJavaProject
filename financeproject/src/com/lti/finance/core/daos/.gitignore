@@ -5,3 +5,7 @@
 /RegistrationDao.class
 /RegistrationDaoImpl.class
 /PurchaseCardDaoImpl.class
+/EmiScheduleDao.class
+/EmiScheduleDaoImpl.class
+/PurchaseProductDao.class
+/PurchaseProductDaoImpl.class

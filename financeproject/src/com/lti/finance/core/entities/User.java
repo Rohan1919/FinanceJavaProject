@@ -76,7 +76,7 @@ public class User {
 	@Column(name="LIMIT",table = "PURCHASE_CARD")
 	private double limit;
 	@Column(name="STATUS",table = "PURCHASE_CARD")
-	private String status="no";
+	private String status="YES";
 	@Column(name="EXPDATE",table = "PURCHASE_CARD")                //DIFFERNT COLUMN NAME THAN VARIABLE
 	//private LocalDate expiryDate=LocalDate.now().plusYears(3);
 	private Date expiryDate=Date.valueOf(LocalDate.now().plusYears(3));

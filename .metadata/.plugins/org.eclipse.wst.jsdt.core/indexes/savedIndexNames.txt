@@ -1,7 +1,2 @@
-INDEX VERSION 1.4+G:\LTI IMPORTANT\ProjectGladiator1\FinanceJavaProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2494368686.index
-1211531806.index
+INDEX VERSION 1.4+D:\FinanceJavaProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 837518363.index
-2778534555.index
-2856184400.index
-2536563197.index

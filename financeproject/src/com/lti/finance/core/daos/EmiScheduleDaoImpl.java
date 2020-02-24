@@ -20,9 +20,10 @@ public class EmiScheduleDaoImpl implements EmiScheduleDao {
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public boolean setEmiSchedule(List<EmiSchedule> emiSchedule)throws FinanceException {
-
-		manager.merge(emiSchedule);
-		return true;
+       for(EmiSchedule l:emiSchedule) {
+		manager.merge(l);
+		
+       }
+       return true;
 	}
-
 }

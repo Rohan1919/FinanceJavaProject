@@ -3,6 +3,7 @@ package com.lti.finance.core.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.lti.finance.core.entities.EmiSchedule;
 import com.lti.finance.core.entities.Product;
 import com.lti.finance.core.entities.Purchase;
 //import com.lti.finance.core.entities.PurchaseCard;
@@ -28,6 +29,9 @@ public interface FinanceService {
 	//Purchase related methods
 	public boolean setPurchaseProductDetails(Purchase purchase) throws FinanceException;
 	public boolean setEmiSchedule(Purchase purchase) throws FinanceException;
+	public User getUser(User user) throws FinanceException;
+	public List<Product> getUserProducts(int userId) throws FinanceException;
+	public List<EmiSchedule> getSchedules(int userId) throws FinanceException;
 	
 
     

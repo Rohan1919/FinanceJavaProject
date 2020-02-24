@@ -3,16 +3,20 @@ package com.lti.finance.core.entities;
 import java.sql.Date;
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 //@SequenceGenerator(name="TRANSACTIONSEQ")
 @Entity
@@ -28,50 +32,44 @@ public class Purchase {
 	@Column(name="TENTUREPERIOD")
 	private int tenturePeriod;
 	@Column(name="TRANSACTIONDATE")
-	private Date transactionDate;
+	private Date transactionDate=Date.valueOf(LocalDate.now());
 	@Column(name="MONTHLYEMI")
 	private double monthlyEmi;
 	@Column(name="TOTALAMOUNT")
 	private double totalAmount;
 	
+	@Column(name="USERID")
+	private int userId;
 	
 	@Column(name="PRODUCTID")
 	private int productId;
 	@Column(name="PCARDNO")
 	private int pCardNo;
 	
+	@JsonIgnore
+	@OneToOne
+	@JoinColumn(name="PRODUCTID",insertable = false,updatable=false)
+	private Product product;
 	
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "purchase")
+	private EmiSchedule emiSchedule;
 	public Purchase() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
-	
-
-	public Purchase(int purchaseId, int productId, int pCardNo, int tenturePeriod, Date transactionDate,
-			double monthlyEmi, double totalAmount) {
+	public Purchase(int purchaseId, int tenturePeriod, Date transactionDate, double monthlyEmi, double totalAmount,
+			int userId, int productId, int pCardNo, Product product) {
 		super();
 		this.purchaseId = purchaseId;
-		this.productId = productId;
-		this.pCardNo = pCardNo;
 		this.tenturePeriod = tenturePeriod;
 		this.transactionDate = transactionDate;
 		this.monthlyEmi = monthlyEmi;
 		this.totalAmount = totalAmount;
-	}
-
-
-
-	public int getProductId() {
-		return productId;
-	}
-
-
-
-	public void setProductId(int productId) {
+		this.userId = userId;
 		this.productId = productId;
+		this.pCardNo = pCardNo;
+		this.product = product;
 	}
-
-
 
 	public int getPurchaseId() {
 		return purchaseId;
@@ -79,14 +77,6 @@ public class Purchase {
 
 	public void setPurchaseId(int purchaseId) {
 		this.purchaseId = purchaseId;
-	}
-
-	public int getpCardNo() {
-		return pCardNo;
-	}
-
-	public void setpCardNo(int pCardNo) {
-		this.pCardNo = pCardNo;
 	}
 
 	public int getTenturePeriod() {
@@ -121,20 +111,46 @@ public class Purchase {
 		this.totalAmount = totalAmount;
 	}
 
+	public int getUserId() {
+		return userId;
+	}
 
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+
+	public int getpCardNo() {
+		return pCardNo;
+	}
+
+	public void setpCardNo(int pCardNo) {
+		this.pCardNo = pCardNo;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
 
 	@Override
 	public String toString() {
-		return "Purchase [purchaseId=" + purchaseId + ", productId=" + productId + ", pCardNo=" + pCardNo
-				+ ", tenturePeriod=" + tenturePeriod + ", transactionDate=" + transactionDate + ", monthlyEmi="
-				+ monthlyEmi + ", totalAmount=" + totalAmount + "]";
+		return "Purchase [purchaseId=" + purchaseId + ", tenturePeriod=" + tenturePeriod + ", transactionDate="
+				+ transactionDate + ", monthlyEmi=" + monthlyEmi + ", totalAmount=" + totalAmount + ", userId=" + userId
+				+ ", productId=" + productId + ", pCardNo=" + pCardNo + ", product=" + product + "]";
 	}
-
 	
-	
-	
-	
-	
+		
 	
 	
 

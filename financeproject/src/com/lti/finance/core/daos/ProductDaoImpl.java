@@ -1,5 +1,6 @@
 package com.lti.finance.core.daos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -41,5 +42,13 @@ public class ProductDaoImpl implements ProductDao{
 		Query qry=manager.createQuery("select p from Product p where p.productType=:productType");
 		qry.setParameter("productType", productType);
 		return qry.getResultList();
+	}
+	@Transactional(propagation = Propagation.REQUIRED)
+	@Override
+	public List<Product> getUserProducts(int userId) throws FinanceException {
+		Query qry=manager.createQuery("select p.productId,p.productName,p.price,r.purchaseId,r.transactionDate,r.totalAmount from Purchase r join r.product p  where r.userId=:userid");
+		qry.setParameter("userid", userId);
+		List<Product> plist=qry.getResultList();
+		return (ArrayList<Product>)plist;
 	}
 }
