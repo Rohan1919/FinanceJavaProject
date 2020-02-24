@@ -1,9 +1,11 @@
 package com.lti.finance.core.daos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
@@ -30,9 +32,11 @@ public class PurchaseProductDaoImpl implements PurchaseProductDao {
 
 	@Override
 	public List<EmiSchedule> getSchedules(int userId) throws FinanceException {
-	    Query qry=manager.createQuery("select transactionId,installementNo,dueDate,amountReceived,status from )
+	    Query qry=manager.createQuery("select e.transactionId,e.installementNo,e.dueDate,e.amountReceived,e.status,d.productName  from EmiSchedule e join e.purchase p join p.product d where userId=:userid)");
+	    qry.setParameter("userid",userId);
+	    List<EmiSchedule> emiS=qry.getResultList();
 		
-		return ;
+		return (ArrayList<EmiSchedule>)emiS;
 	}
 	
 	
