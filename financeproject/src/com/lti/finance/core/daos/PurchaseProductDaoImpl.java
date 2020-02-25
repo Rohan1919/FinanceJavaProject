@@ -29,14 +29,28 @@ public class PurchaseProductDaoImpl implements PurchaseProductDao {
 		return true;
 		
 	}
-
+	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public List<EmiSchedule> getSchedules(int userId) throws FinanceException {
-	    Query qry=manager.createQuery("select e.transactionId,e.installementNo,e.dueDate,e.amountReceived,e.status,d.productName  from EmiSchedule e join e.purchase p join p.product d where userId=:userid)");
+	    Query qry=manager.createQuery("select e.transactionId,e.installmentNo,e.dueDate,e.amountReceived,e.status,d.productName  from EmiSchedule e join e.purchase p join p.product d where userId=:userid)");
 	    qry.setParameter("userid",userId);
 	    List<EmiSchedule> emiS=qry.getResultList();
 		
 		return (ArrayList<EmiSchedule>)emiS;
+	}
+	@Transactional(propagation = Propagation.REQUIRED)
+	@Override
+	public boolean changeTransactionStatus(EmiSchedule eSch) throws FinanceException {
+		Query qry=manager.createQuery("update status set status ='Yes' where transactionId=:tranid AND amountReceived=:amtr");
+		qry.setParameter("amtr",eSch.getAmountReceived());
+		qry.setParameter("tranid", eSch.getTransactionId());
+		int q=qry.executeUpdate();
+		if(q==0) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	}
 	
 	

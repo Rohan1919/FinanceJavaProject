@@ -2,6 +2,7 @@ package com.lti.finance.core.entities;
 
 import java.sql.Date;
 import java.time.LocalDate;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -51,8 +52,10 @@ public class Purchase {
 	@JoinColumn(name="PRODUCTID",insertable = false,updatable=false)
 	private Product product;
 	
+	@JsonIgnore
 	@OneToMany(cascade = CascadeType.ALL,mappedBy = "purchase")
-	private EmiSchedule emiSchedule;
+	private List<EmiSchedule> emiSchedule;
+	
 	public Purchase() {
 		
 	}

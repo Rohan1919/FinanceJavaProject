@@ -11,5 +11,7 @@ public interface PurchaseProductDao {
 	boolean setPurchaseProductDetails(Purchase purchase) throws FinanceException;
 
 	List<EmiSchedule> getSchedules(int userId) throws FinanceException;
+
+	boolean changeTransactionStatus(EmiSchedule eSch) throws FinanceException;
 	
 }

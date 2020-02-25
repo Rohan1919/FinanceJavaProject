@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.lti.finance.core.entities.Product;
-
+import com.lti.finance.core.entities.User;
 import com.lti.finance.core.exception.FinanceException;
 
 @Repository
@@ -50,5 +50,14 @@ public class ProductDaoImpl implements ProductDao{
 		qry.setParameter("userid", userId);
 		List<Product> plist=qry.getResultList();
 		return (ArrayList<Product>)plist;
+	}
+	@Transactional(propagation = Propagation.REQUIRED)
+	@Override
+	public ArrayList<Product> getProductList() throws FinanceException {
+		Query qry=manager.createQuery("from Product");
+		List <Product> productList=qry.getResultList();
+		
+		return (ArrayList<Product>)productList;
+	
 	}
 }

@@ -144,10 +144,22 @@ public class FinanceServiceImpl implements FinanceService {
 	public List<Product> getUserProducts(int userId) throws FinanceException {
 		return pdao.getUserProducts(userId); 
 	}
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override
 	public List<EmiSchedule> getSchedules(int userId) throws FinanceException {
 		// TODO Auto-generated method stub
 		return ppdao.getSchedules(userId);
+	}
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	@Override
+	public boolean changeTransactionStatus(EmiSchedule eSch) throws FinanceException {
+		return ppdao.changeTransactionStatus(eSch);
+	}
+	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	@Override
+	public ArrayList<Product> getProductList() throws FinanceException {
+		
+		return pdao.getProductList();
 	}
 
 

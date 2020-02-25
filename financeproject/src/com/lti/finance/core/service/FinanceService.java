@@ -32,6 +32,9 @@ public interface FinanceService {
 	public User getUser(User user) throws FinanceException;
 	public List<Product> getUserProducts(int userId) throws FinanceException;
 	public List<EmiSchedule> getSchedules(int userId) throws FinanceException;
+	public boolean changeTransactionStatus(EmiSchedule eSch) throws FinanceException ;
+	public ArrayList<Product> getProductList() throws FinanceException;
+	
 	
 
     

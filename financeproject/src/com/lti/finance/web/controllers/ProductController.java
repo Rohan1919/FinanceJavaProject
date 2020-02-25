@@ -43,7 +43,20 @@ public class ProductController {
 //		 return prod;
 //	}
 	
-	@PutMapping(value="/getProductDetails",produces="application/json",consumes="application/json")
+	@GetMapping(value="/getAllProduct",produces="application/json")
+	public @ResponseBody ArrayList<Product> getUserDetails(){
+		ArrayList<Product> productList=null;
+		try {
+			productList=service.getProductList();
+		} catch (FinanceException e) {
+			
+			e.printStackTrace();
+		}
+		System.out.println(productList);
+		return productList;
+	}
+	
+	@PostMapping(value="/getProductDetails",produces="application/json",consumes="application/json")
 	public @ResponseBody Product getProductDetails(@RequestBody Product product) {
 		System.out.println(product.getProductId());
 		Product prod=null;
@@ -85,7 +98,7 @@ public class ProductController {
 //	}
 	
 	//fetching product by type
-		@PutMapping(value="/getProductDetailsByType",produces="application/json",consumes="application/json")
+		@PostMapping(value="/getProductDetailsByType",produces="application/json",consumes="application/json")
 		public @ResponseBody List<Product> getProductDetailsByType(@RequestBody Product product) {
 			System.out.println(product.getProductType());
 			List<Product> prod=new ArrayList<>();

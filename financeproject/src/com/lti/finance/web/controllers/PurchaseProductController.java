@@ -25,7 +25,7 @@ public class PurchaseProductController {
 	
 	@Autowired
 	private FinanceService service;
-	
+	//for buying products entering records into purchase and schedule tables according to emi scheme
 	@PostMapping(value="/purchaseProduct",consumes="application/json")
 	public boolean setPurchaseProductDetails(@RequestBody Purchase purchase) {
 	try {
@@ -36,7 +36,7 @@ public class PurchaseProductController {
 	}
 	return false;
 	}
-	
+	//Displaying Schedules on dashboard
 	@PostMapping(value="/schedules",consumes="application/json")
 	public @ResponseBody List<EmiSchedule> getSchedules(@RequestBody User user) {
 		EmiSchedule emiS=new EmiSchedule();
@@ -50,7 +50,18 @@ public class PurchaseProductController {
 		return emiSchedule;
 	}
 	
+	//changing status of TransactionSchedule
 	
+	@PostMapping(value="/transactionStatus",consumes="application/json")
+	public boolean changeTransactionSchedule(@RequestBody EmiSchedule eSch) {
+	try {
+		return service.changeTransactionStatus(eSch);
+	} catch (FinanceException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return false;
+	}
 }
 
 
