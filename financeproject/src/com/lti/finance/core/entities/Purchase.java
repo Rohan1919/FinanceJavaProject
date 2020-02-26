@@ -25,11 +25,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Purchase {
 	
 	//@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TRANSACTIONSEQ")
+//	
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PURCHASEIDSEQ")
-	@SequenceGenerator(name="PURCHASEIDSEQ", sequenceName="PURCHASEIDSEQ", allocationSize=5)
+    @SequenceGenerator(name="PURCHASEIDSEQ", sequenceName="PURCHASEIDSEQ", allocationSize=5)
 	@Column(name="PURCHASEID")
 	private int purchaseId;
+	
 	@Column(name="TENTUREPERIOD")
 	private int tenturePeriod;
 	@Column(name="TRANSACTIONDATE")
@@ -44,24 +46,27 @@ public class Purchase {
 	
 	@Column(name="PRODUCTID")
 	private int productId;
+	
 	@Column(name="PCARDNO")
 	private int pCardNo;
 	
-	@JsonIgnore
-	@OneToOne
-	@JoinColumn(name="PRODUCTID",insertable = false,updatable=false)
-	private Product product;
+//	@JsonIgnore
+//	@OneToOne
 	
-	@JsonIgnore
-	@OneToMany(cascade = CascadeType.ALL,mappedBy = "purchase")
-	private List<EmiSchedule> emiSchedule;
+	
+	/*
+	 * @JsonIgnore
+	 * 
+	 * @OneToMany(cascade = CascadeType.ALL,mappedBy = "purchase") private
+	 * List<EmiSchedule> emiSchedule;
+	 */
 	
 	public Purchase() {
 		
 	}
 
 	public Purchase(int purchaseId, int tenturePeriod, Date transactionDate, double monthlyEmi, double totalAmount,
-			int userId, int productId, int pCardNo, Product product) {
+			int userId, int productId, int pCardNo) {
 		super();
 		this.purchaseId = purchaseId;
 		this.tenturePeriod = tenturePeriod;
@@ -71,7 +76,7 @@ public class Purchase {
 		this.userId = userId;
 		this.productId = productId;
 		this.pCardNo = pCardNo;
-		this.product = product;
+
 	}
 
 	public int getPurchaseId() {
@@ -137,20 +142,13 @@ public class Purchase {
 	public void setpCardNo(int pCardNo) {
 		this.pCardNo = pCardNo;
 	}
-
-	public Product getProduct() {
-		return product;
-	}
-
-	public void setProduct(Product product) {
-		this.product = product;
-	}
+	 
 
 	@Override
 	public String toString() {
 		return "Purchase [purchaseId=" + purchaseId + ", tenturePeriod=" + tenturePeriod + ", transactionDate="
 				+ transactionDate + ", monthlyEmi=" + monthlyEmi + ", totalAmount=" + totalAmount + ", userId=" + userId
-				+ ", productId=" + productId + ", pCardNo=" + pCardNo + ", product=" + product + "]";
+				+ ", productId=" + productId + ", pCardNo=" + pCardNo + "]";
 	}
 	
 		

@@ -35,15 +35,18 @@ public class EmiSchedule {
 	private Date dueDate;
 	@Column(name="AMOUNTRECEIVED")
 	private double amountReceived;
-	@Column(name="AMOUNTRECEIVABLE")
-	private double amountReceivable;
+
 	@Column(name="STATUS")
 	private String status;
 	
-	@JsonIgnore
-	@ManyToOne
-	@JoinColumn(name="PURCHASEID",insertable = false,updatable=false)
-	private Purchase purchase;
+	/*
+	 * @JsonIgnore
+	 * 
+	 * @ManyToOne
+	 * 
+	 * @JoinColumn(name="PURCHASEID",insertable = false,updatable=false) private
+	 * Purchase purchase;
+	 */
 	
 	public EmiSchedule() {
 		
@@ -58,7 +61,7 @@ public class EmiSchedule {
 		this.installmentNo = installmentNo;
 		this.dueDate = dueDate;
 		this.amountReceived = amountReceived;
-		this.amountReceivable = amountReceivable;
+		
 		this.status = status;
 	}
 
@@ -103,13 +106,7 @@ public class EmiSchedule {
 		this.amountReceived = amountReceived;
 	}
 
-	public double getAmountReceivable() {
-		return amountReceivable;
-	}
 
-	public void setAmountReceivable(double amountReceivable) {
-		this.amountReceivable = amountReceivable;
-	}
 
 	
 	public String getStatus() {
@@ -126,8 +123,7 @@ public class EmiSchedule {
 	@Override
 	public String toString() {
 		return "EmiSchedule [transactionId=" + transactionId + ", purchaseId=" + purchaseId + ", installmentNo="
-				+ installmentNo + ", dueDate=" + dueDate + ", amountReceived=" + amountReceived + ", amountReceivable="
-				+ amountReceivable + ", status=" + status + "]";
+				+ installmentNo + ", dueDate=" + dueDate + ", amountReceived=" + amountReceived + ", status=" + status + "]";
 	}
 
 	

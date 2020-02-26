@@ -17,7 +17,7 @@ public class EmiScheduleDaoImpl implements EmiScheduleDao {
 	@PersistenceContext
 	private EntityManager manager;
 	
-	@Transactional(propagation = Propagation.REQUIRED)
+	//@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public boolean setEmiSchedule(List<EmiSchedule> emiSchedule)throws FinanceException {
        for(EmiSchedule l:emiSchedule) {

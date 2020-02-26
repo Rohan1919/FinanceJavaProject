@@ -107,14 +107,15 @@ public class FinanceServiceImpl implements FinanceService {
 	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override
 	public boolean setPurchaseProductDetails(Purchase purchase) throws FinanceException {
+		System.out.println("Inside service purchase : -"+purchase);
 		purchase.setMonthlyEmi((purchase.getTotalAmount()/purchase.getTenturePeriod()));
 		boolean b=setEmiSchedule(purchase);//method 
 		return ppdao.setPurchaseProductDetails(purchase);
 	}
 	
-	@Transactional(propagation =Propagation.REQUIRES_NEW)
+	//@Transactional(propagation =Propagation.REQUIRES_NEW)
 	public boolean setEmiSchedule(Purchase purchase) throws FinanceException  {
-		
+		System.out.println(purchase);
 		EmiSchedule emiSch=null;
 		List <EmiSchedule> emiSchedule=new ArrayList<>();
 		
@@ -124,7 +125,7 @@ public class FinanceServiceImpl implements FinanceService {
 		     emiSch.setPurchaseId(purchase.getPurchaseId());
 		     emiSch.setDueDate(Date.valueOf((LocalDate.now().plusDays(30*i))));
 		     emiSch.setAmountReceived(purchase.getMonthlyEmi());
-		     emiSch.setAmountReceivable(purchase.getTotalAmount());
+		     
 		     emiSch.setStatus("NO"); 
 		     emiSchedule.add(emiSch);
 		}

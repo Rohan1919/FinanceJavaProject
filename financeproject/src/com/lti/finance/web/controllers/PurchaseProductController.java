@@ -28,6 +28,7 @@ public class PurchaseProductController {
 	//for buying products entering records into purchase and schedule tables according to emi scheme
 	@PostMapping(value="/purchaseProduct",consumes="application/json")
 	public boolean setPurchaseProductDetails(@RequestBody Purchase purchase) {
+		System.out.println("purchase"+purchase);
 	try {
 		return service.setPurchaseProductDetails(purchase);
 	} catch (FinanceException e) {
@@ -40,7 +41,9 @@ public class PurchaseProductController {
 	@PostMapping(value="/schedules",consumes="application/json")
 	public @ResponseBody List<EmiSchedule> getSchedules(@RequestBody User user) {
 		EmiSchedule emiS=new EmiSchedule();
+		
 		List<EmiSchedule> emiSchedule=new ArrayList<>();
+		
 		try {
 			emiSchedule=service.getSchedules(user.getUserId());
 		} catch (FinanceException e) {

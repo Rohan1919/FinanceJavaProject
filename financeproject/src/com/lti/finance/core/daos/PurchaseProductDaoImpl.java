@@ -24,7 +24,7 @@ public class PurchaseProductDaoImpl implements PurchaseProductDao {
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public boolean setPurchaseProductDetails(Purchase purchase) throws FinanceException {
-		
+		System.out.println("I'm in dao"+purchase);
 		manager.merge(purchase);
 		return true;
 		
@@ -32,7 +32,7 @@ public class PurchaseProductDaoImpl implements PurchaseProductDao {
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public List<EmiSchedule> getSchedules(int userId) throws FinanceException {
-	    Query qry=manager.createQuery("select e.transactionId,e.installmentNo,e.dueDate,e.amountReceived,e.status,d.productName  from EmiSchedule e join e.purchase p join p.product d where userId=:userid)");
+	    Query qry=manager.createQuery("select e.transactionId,e.installmentNo,e.dueDate,e.amountReceived,e.status,d.productName  from EmiSchedule e join e.purchase p join p.product d where p.userId=:userid)");
 	    qry.setParameter("userid",userId);
 	    List<EmiSchedule> emiS=qry.getResultList();
 		
