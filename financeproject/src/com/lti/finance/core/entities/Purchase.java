@@ -50,16 +50,15 @@ public class Purchase {
 	@Column(name="PCARDNO")
 	private int pCardNo;
 	
-//	@JsonIgnore
-//	@OneToOne
+	@JsonIgnore
+	@OneToOne
+	@JoinColumn(name="PRODUCTID",insertable = false,updatable=false)
+	private Product product;
 	
-	
-	/*
-	 * @JsonIgnore
-	 * 
-	 * @OneToMany(cascade = CascadeType.ALL,mappedBy = "purchase") private
-	 * List<EmiSchedule> emiSchedule;
-	 */
+	@JsonIgnore
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "purchase")
+	private List<EmiSchedule> emiSchedule;
+	 
 	
 	public Purchase() {
 		

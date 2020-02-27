@@ -14,7 +14,7 @@ import com.lti.finance.core.exception.FinanceException;
 public interface FinanceService {
 	
 	
-	public boolean setUserDetails(User user) throws FinanceException;
+	public User setUserDetails(User user) throws FinanceException;
 	public ArrayList<User> getUserList() throws FinanceException;
 	public Product getProductDetails(int productId)throws FinanceException;
 	

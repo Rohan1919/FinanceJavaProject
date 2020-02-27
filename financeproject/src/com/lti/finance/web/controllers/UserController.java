@@ -23,16 +23,17 @@ public class UserController {
 	private FinanceService fService;
 	
 	@PostMapping(value="/registration",consumes="application/json")
-	public boolean setUserDetails(@RequestBody User user){
+	public User setUserDetails(@RequestBody User user){
 		//String pr = user.getpCard().getCardType();
+		 User user1=null;
 		try {
-			boolean p= fService.setUserDetails(user);
-			return p;
+			user= fService.setUserDetails(user);
+		
 		} catch (FinanceException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return false;
+		return user1;
 		
 	}
 	

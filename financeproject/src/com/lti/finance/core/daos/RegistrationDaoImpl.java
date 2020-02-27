@@ -23,9 +23,9 @@ public class RegistrationDaoImpl implements RegistrationDao {
 	
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
-	public boolean setUserDetails(User user) throws FinanceException {
+	public User setUserDetails(User user) throws FinanceException {
 		manager.merge(user);
-		return true;
+		return user;
 	}
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override

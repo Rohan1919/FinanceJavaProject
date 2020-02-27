@@ -39,14 +39,12 @@ public class EmiSchedule {
 	@Column(name="STATUS")
 	private String status;
 	
-	/*
-	 * @JsonIgnore
-	 * 
-	 * @ManyToOne
-	 * 
-	 * @JoinColumn(name="PURCHASEID",insertable = false,updatable=false) private
-	 * Purchase purchase;
-	 */
+	
+	  @JsonIgnore
+	  @ManyToOne
+	  @JoinColumn(name="PURCHASEID",insertable = false,updatable=false) 
+	  private Purchase purchase;
+	
 	
 	public EmiSchedule() {
 		

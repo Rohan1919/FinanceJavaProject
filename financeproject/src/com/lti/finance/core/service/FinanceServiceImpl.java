@@ -43,21 +43,23 @@ public class FinanceServiceImpl implements FinanceService {
 	//Registration user details
 	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override
-	public boolean setUserDetails(User user) throws FinanceException {
-		
+	public User setUserDetails(User user) throws FinanceException {
+		User user1=null;
 		if(rdao.isUniqueUser(user.getAadharCardNumber())) {
 			GovApi gapi=rdao.isValid(user.getAadharCardNumber());
+			
 			if(gapi.getName().equalsIgnoreCase(user.getName()) && (gapi.getAadharCardNo().equalsIgnoreCase(user.getAadharCardNumber()))&& (gapi.getPanCardNo().equalsIgnoreCase(user.getPanCardNumber()))){
 				
-				return rdao.setUserDetails(user);
+				user1=rdao.setUserDetails(user);
 		
 			}else {
-				return false;
+				user1.setUserId(-1);
 			}
 		}
 		else {
-			return false;
+			 user1.setUserId(-1);
 		}
+		return user1;
 	}
 	@Transactional(propagation =Propagation.REQUIRES_NEW)
 	@Override

@@ -40,12 +40,12 @@ public class Product {
 	@Column(name="PRODUCTTYPE")
 	private String productType;
 	
-	/*
-	 * @JsonIgnore
-	 * 
-	 * @OneToOne(cascade = CascadeType.ALL,mappedBy = "product") private Purchase
-	 * purchase;
-	 */
+	
+	
+	 @JsonIgnore
+	 @OneToOne(cascade = CascadeType.ALL,mappedBy = "product")
+	 private Purchase purchase;
+	
 	
 	public Product() {
 		
